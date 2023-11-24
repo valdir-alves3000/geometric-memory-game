@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="stylesheet" href="./src/styles/modal.css" />
   </head>
   <body>
     <div class="container">
@@ -15,6 +16,17 @@
       <button class="reset" onclick="window.location.reload()">
         RESET GAME
       </button>
+    </div>
+
+    <div class="modal" id="victoryModal">
+      <div class="modal-content">
+        <h2>Você Venceu!</h2>
+        <p>
+          <b>Parabéns!</b> Você conseguiu descobrir todas as figuras
+          geometricas.
+        </p>
+        <button onclick="window.location.reload()">JOGAR NOVAMENTE</button>
+      </div>
     </div>
 
     <script src="./src/scripts/engine.js" defer></script>
